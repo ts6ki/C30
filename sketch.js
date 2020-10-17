@@ -1,3 +1,9 @@
+////Hi Shivam! this is for your reference that how to see ASCII value of any key 
+//**************************** */
+var charCode = "a".charCodeAt(0); 
+console.log(charCode);
+/**************************** */
+
 const Engine = Matter.Engine;
 const World= Matter.World;
 const Bodies = Matter.Bodies;
@@ -74,4 +80,14 @@ function mouseDragged(){
 
 function mouseReleased(){
     slingshot.fly();
+}
+
+function keyPressed(){
+    console.log("i am called")
+    if(keyCode === 82)
+    {
+
+        console.log("R is presssed")
+        slingshot.attach(bird.body);
+    }
 }
